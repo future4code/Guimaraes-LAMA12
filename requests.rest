@@ -1,13 +1,32 @@
 
-POST http://localhost:3003/user/signup
+POST http://localhost:3000/user/signup
 Content-Type: application/json
 
 {
-    "email": "jenifer@email.com.br",
-    "name": "Jenifer Kindermann",
+    "email": "beth@email.com.br",
+    "name": "Beth Kindermann",
     "password": "ninalinda",
-    "role": "ADMIN"
+    "role": "NORMAL"
 
 }
 
 ###
+
+POST  http://localhost:3000/user/login
+Content-Type: application/json
+
+{
+    "email": "jenifer@email.com.br",
+    "password": "ninalinda"
+}
+
+###
+
+PUT  http://localhost:3000/band/register
+Authorization: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjdiNjM0YzhhLTFlYTctNGNjNi1iNTViLWRiNWY4NDkwN2RmMyIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTY2MzEyMTU3NiwiZXhwIjoxNjYzMTIyMTc2fQ.MfpXOLkIcN5Ln3ZAIqXCSNqlfT-Uh0PY1iG2JV5IVbQ"
+
+{
+    "name": "banda",
+    "mainGenre": "mpb",
+    "responsible": "jenifer"
+}
